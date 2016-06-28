@@ -4,6 +4,7 @@
 ####
 ####	SETTING WORKING DIRECTORY & OUTPUT_FILES
 ####	LOADING DATA
+####	INSTALL MISSING PACKAGES
 ####
 #####################################################################################################################################################
 #####################################################################################################################################################
@@ -22,7 +23,6 @@
 	attach(boston)
 	# creating data.frame for easier data_wrangling
 	boston_df <- data.frame(CRIM, ZN, INDUS, CHAS, NOX, RM, AGE, DIS, RAD, TAX, PTRATIO, B, LSTAT, MEDV)
-
 
 
 	# installing missing packages
