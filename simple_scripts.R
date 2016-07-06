@@ -46,8 +46,6 @@ summary(fit2)
 
 fit3 <- update(fit2, ~ . - AGE - INDUS - RAD)
 summary(fit3)
-par(mfrow = c(2,2))
-plot(fit3)
 
 # checking for outliers and high-leverage points
 
