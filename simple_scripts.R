@@ -100,19 +100,19 @@ plot(fit6)
 # cross-validation
 
 par(mfrow = c(1,1))
-fit4_CV <- CVlm(data = boston.df, form.lm = formula(fit4), m = 10, dots = FALSE, seed = 1, plotit = c("Observed", "Residual"), main = "Cross-validation for fit4", legend.pos="topleft", printit = )
+fit4_CV <- CVlm(data = boston.df, form.lm = formula(fit4), m = 10, dots = FALSE, seed = 1, plotit = c("Observed", "Residual"), main = "Cross-validation for fit4", legend.pos="topleft")
 summary(fit4_CV)
 attributes(fit4_CV)
-# mean squared: 15.8 
+# mean squared: 15.8
 
 par(mfrow = c(1,1))
-fit5_CV <- CVlm(data = boston.df, form.lm = formula(fit5), m = 10, dots = FALSE, seed = 1, plotit = c("Observed", "Residual"), main = "Cross-validation for fit5", legend.pos="topleft", printit = )
+fit5_CV <- CVlm(data = boston.df, form.lm = formula(fit5), m = 10, dots = FALSE, seed = 1, plotit = c("Observed", "Residual"), main = "Cross-validation for fit5", legend.pos="topleft")
 summary(fit5_CV)
 attributes(fit5_CV)
 # mean squared: 13.7
 
 par(mfrow = c(1,1))
-fit6_CV <- CVlm(data = boston.df, form.lm = formula(fit6), m = 10, dots = FALSE, seed = 1, plotit = c("Observed", "Residual"), main = "Cross-validation for fit6", legend.pos="topleft", printit = )
+fit6_CV <- CVlm(data = boston.df, form.lm = formula(fit6), m = 10, dots = FALSE, seed = 1, plotit = c("Observed", "Residual"), main = "Cross-validation for fit6", legend.pos="topleft")
 summary(fit6_CV)
 attributes(fit6_CV)
 # mean squared: 13.7
